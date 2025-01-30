@@ -46,7 +46,7 @@ resource "google_sql_user" "wordpress" {
 
 # ATTENTION : A changer: le nom doit être unique !
 resource "google_storage_bucket" "default" {
-     name          = "terraform-bucket-sitn" 
+     name          = "terraform-bucket-sitn-bis" 
      location      = "US"
      force_destroy = true
 }

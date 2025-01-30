@@ -1,0 +1,11 @@
+steps:
+  # Étape 1: Construire l'image Docker
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'us-central1-docker.pkg.dev/tpnote-449407/website-tools/wordpress-custom', '.']
+    
+  # Étape 2: Pousser l'image vers Artifact Registry
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'us-central1-docker.pkg.dev/tpnote-449407/website-tools/wordpress-custom']
+
+images:
+  - 'us-central1-docker.pkg.dev/tpnote-449407/website-tools/wordpress-custom'
