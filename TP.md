@@ -178,6 +178,9 @@ Notre but, ne l'oublions pas est de déployer wordpress sur Cloud Run puis Kuber
    2. Au bout de 5 min, que se passe-t-il ? 🤯🤯🤯
    3. Regarder le resultat de votre commande `terraform apply` et observer les logs de Cloud Run
 
+   L'erreur est bien visible
+   ![alt text](image-6.png)
+
 3. Autoriser toutes les adresses IP à se connecter à notre base MySQL (sous réserve d'avoir l'utilisateur et le mot de passe évidemment)
    1. Pour le faire, exécuter la commande
       ```bash
@@ -189,7 +192,9 @@ Notre but, ne l'oublions pas est de déployer wordpress sur Cloud Run puis Kuber
    1. Aller sur : https://console.cloud.google.com/run/detail/us-central1/serveur-wordpress/metrics?
    2. Cliquer sur l'URL de votre Cloud Run : similaire à https://serveur-wordpress-oreldffftq-uc.a.run.app
    3. Que voyez vous ? 🙈
-
+   
+   On arrive a voir une page wordpress a l'addresse suivante : https://wordpress-service-263945941625.us-central1.run.app/wp-admin/install.php
+   ![alt text](image-7.png)
 
 6. Afin d'avoir un déploiement plus robuste pour l'entreprise et économiser les coûts du service CloudSQL, nous allons déployer Wordpress sur Kubernetes
    1. Rajouter le provider kubernetes en dépendance dans `required_providers`
@@ -216,6 +221,11 @@ Notre but, ne l'oublions pas est de déployer wordpress sur Cloud Run puis Kuber
    ```
 
    4. Rendez vous sur l'adresse IP publique du service kubernetes Wordpress et vérifiez que Wordpress fonctionne 🔥
+
+
+
+
+
 
 
 ## BONUS : Partie 4

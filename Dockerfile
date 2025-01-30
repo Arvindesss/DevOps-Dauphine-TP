@@ -5,7 +5,9 @@ FROM wordpress:latest
 ENV WORDPRESS_DB_USER=wordpress
 ENV WORDPRESS_DB_PASSWORD=ilovedevops
 ENV WORDPRESS_DB_NAME=wordpress
-ENV WORDPRESS_DB_HOST=0.0.0.0
+ENV WORDPRESS_DB_HOST=104.154.197.184
+cd
+
 
 # Exposer le port par défaut de WordPress (80)
 EXPOSE 80

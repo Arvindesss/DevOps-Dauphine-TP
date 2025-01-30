@@ -1,0 +1,929 @@
+{
+  "version": 4,
+  "terraform_version": "1.5.7",
+  "serial": 9,
+  "lineage": "9d3e8ae7-a4dd-a456-32ad-5f49baed04be",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "data",
+      "type": "google_client_config",
+      "name": "default",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "access_token": "ya29.a0AXeO80ROaY8Rvin4YCSaBj3ehiD-7Ovoe0eyq43LCyqOfoKvPhGzeQ0xMrCs-cIy5dzAIbjs5RM0-JMHlA5jPEk8r47VSgvCuHESHYCIAgMRTV4mektWbAc8sXFTEl0ErvLidma0tk1ssNqkRUfIOR8QmSe1jd4-0IsJw3LD_MPixlHQYiFuEDPaETZMU43_Xx7KbXl49c6quDZsCqi3yiYYA1fjcnoNoW0RIGNrBG29wq24x_PzHMYaOdbjOoAu-YPDXA59pFgAyO_1C0IWu4EZRPrh7zsxs-ILFD4sCMmOWKUroRE0yFl6WeZWlDG0oZzHi7hUx6qgSyoptf-Zq41xsl5F007I370ElxXPDiZjndQ9Vr_lvcnPaLseuqDiWD0XO1pfNYxCPgUqzWsdAAXTosVIxX_laCgYKAfESARESFQHGX2MiC-nn_zxCsiN6X-PdsztDEQ0423",
+            "id": "projects/\"tpnote-449407\"/regions/\"us-central1\"/zones/\u003cnull\u003e",
+            "project": "tpnote-449407",
+            "region": "us-central1",
+            "zone": null
+          },
+          "sensitive_attributes": []
+        }
+      ]
+    },
+    {
+      "mode": "data",
+      "type": "google_container_cluster",
+      "name": "my_cluster",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "addons_config": [
+              {
+                "cloudrun_config": [],
+                "config_connector_config": [],
+                "dns_cache_config": [],
+                "gce_persistent_disk_csi_driver_config": [
+                  {
+                    "enabled": true
+                  }
+                ],
+                "gcp_filestore_csi_driver_config": [],
+                "gcs_fuse_csi_driver_config": [],
+                "gke_backup_agent_config": [],
+                "horizontal_pod_autoscaling": [],
+                "http_load_balancing": [],
+                "network_policy_config": [
+                  {
+                    "disabled": true
+                  }
+                ]
+              }
+            ],
+            "allow_net_admin": null,
+            "authenticator_groups_config": [],
+            "binary_authorization": [],
+            "cluster_autoscaling": [
+              {
+                "auto_provisioning_defaults": [],
+                "enabled": false,
+                "resource_limits": []
+              }
+            ],
+            "cluster_ipv4_cidr": "10.48.0.0/14",
+            "confidential_nodes": [],
+            "cost_management_config": [],
+            "database_encryption": [
+              {
+                "key_name": "",
+                "state": "DECRYPTED"
+              }
+            ],
+            "datapath_provider": "",
+            "default_max_pods_per_node": 110,
+            "default_snat_status": [],
+            "description": "",
+            "dns_config": [],
+            "enable_autopilot": false,
+            "enable_binary_authorization": false,
+            "enable_intranode_visibility": false,
+            "enable_k8s_beta_apis": [],
+            "enable_kubernetes_alpha": false,
+            "enable_l4_ilb_subsetting": false,
+            "enable_legacy_abac": false,
+            "enable_shielded_nodes": true,
+            "enable_tpu": false,
+            "endpoint": "34.122.157.86",
+            "gateway_api_config": [],
+            "id": "projects/tpnote-449407/locations/us-central1-a/clusters/gke-dauphine",
+            "initial_node_count": 0,
+            "ip_allocation_policy": [
+              {
+                "additional_pod_ranges_config": [],
+                "cluster_ipv4_cidr_block": "10.48.0.0/14",
+                "cluster_secondary_range_name": "gke-gke-dauphine-pods-dda829b4",
+                "pod_cidr_overprovision_config": [
+                  {
+                    "disabled": false
+                  }
+                ],
+                "services_ipv4_cidr_block": "34.118.224.0/20",
+                "services_secondary_range_name": "",
+                "stack_type": "IPV4"
+              }
+            ],
+            "label_fingerprint": "a9dc16a7",
+            "location": "us-central1-a",
+            "logging_config": [
+              {
+                "enable_components": [
+                  "SYSTEM_COMPONENTS",
+                  "WORKLOADS"
+                ]
+              }
+            ],
+            "logging_service": "logging.googleapis.com/kubernetes",
+            "maintenance_policy": [],
+            "master_auth": [
+              {
+                "client_certificate": "",
+                "client_certificate_config": [
+                  {
+                    "issue_client_certificate": false
+                  }
+                ],
+                "client_key": "",
+                "cluster_ca_certificate": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUVMRENDQXBTZ0F3SUJBZ0lRSndrckt3dTVEKzZrbWZkQzE1cGd5VEFOQmdrcWhraUc5dzBCQVFzRkFEQXYKTVMwd0t3WURWUVFERXlReFpHWXlZakExWVMweFpXWXpMVFE1WkdNdFlUTmxPQzA1TTJSaE56VXhOR1ppTm1VdwpJQmNOTWpVd01UTXdNRGN3TWpBM1doZ1BNakExTlRBeE1qTXdPREF5TURkYU1DOHhMVEFyQmdOVkJBTVRKREZrClpqSmlNRFZoTFRGbFpqTXRORGxrWXkxaE0yVTRMVGt6WkdFM05URTBabUkyWlRDQ0FhSXdEUVlKS29aSWh2Y04KQVFFQkJRQURnZ0dQQURDQ0FZb0NnZ0dCQUlpMkZmTSsxYnNkU2Y1V01UNW80c3UxSFQzb0tYUkxhdERiZGV3RApsUklkL0ZWdXJ5WDlsRGhsdHFUNjdjTldWKzNNU2x6d3dVY1k0aEJibGlUSVVEdXhzY3QrUkVjcml1aG1IMnJRClJaa3VqUWZTZ1QvUml6cm1aM01Va1o2bkZDWTNOSkZUU0NtUWY0OExzM0grUjErWEZwczlhbFkwd0grbzA3YzYKS0FZZzRUeEZnZFRDR0NhQmdIRGhhVDJQMURBV1lPWnBPbDlLMzdxZGZQQnl3bmFQSXl5SmhrVGNJSjlERThPNQpCN2hDTXY3V2tycnhXUm1kemYzVGdqcnQvUWswRFhJNzA0WStEVHFtQlJyTkVXMVZubE02b3RmSnNaRE03NjlnCndhTnVFRGpZVE9CaTd3ZndnS0ZxWVlybGtCdHUyU0dCaXg0ZFB5Z0oyd0JkdjFUWlRqUVkyUFlXV29neVBZSEMKQWtjUVBCb28xR05Wck1rQVF1WklTdGY4NWp1SFREZEVjeXFvMExKbldxak1WRGM2UkdwUWc0Z2EycnJSVUhwTQpzUXIxWkFqU2wxelkrNjdIcld4THNVODdjMTNCVE5EVEZQeWtSbWtmWVZFVkJ6K2Y0Y3NWeGNadS8vN1AzV044CnVLN0NuQi92Qzd0UGtnTTZ2YmFCQXdrWEpRSURBUUFCbzBJd1FEQU9CZ05WSFE4QkFmOEVCQU1DQWdRd0R3WUQKVlIwVEFRSC9CQVV3QXdFQi96QWRCZ05WSFE0RUZnUVVpN0hiZ3Nmak1ZVmI5d2RWbzZLemgzSWFxZXN3RFFZSgpLb1pJaHZjTkFRRUxCUUFEZ2dHQkFEUTV0cEtBdGNORjZwU2l6K1A0eFR4eDc1SC9yWm9vV0JTYjVuTVdlTTY5CnRmWVMzaDVuY05Vem42UGd3clQwQU0wckNRajRKNitZYzAvZnpOeDZBcWpBdG9yaXdOOXdUZm90SmZlRldtR0oKam1iajBuYzdueGwxOVhTQXlkTDdQZUR3QnY5TjN5OTRBV0xHbUxOMmdtTG1OQURybVlyd0Z4ZnJocDZEN0xCdQpXZy9tNW9pRlVIYXdiWVNwQ3BnSEM0OEx2OGppNGJIZTJUaWF5WmRTWEMyRHFCMEVIZHVaa05mdk9tS1V6SDNLCnF2bGd5ZDFFdzRON2hFQXFSWEg1V0x5eEtCNkZSY1dieG5ZVlNReFhjeEZJY0lQR0hBT1kyZUt0Z1U1dUE3NzQKY0xnYUxZSmZLd2poR1NDL2N0WmNiUmRoR1Q4dWh3am5lN1h4SGN6UU5EdDFNdi9UZWxVbXlncytaZE00c0E1ego0YkFRdEhYMDBHTjNQNk5KMC8vRGNOTE1NajNRNXQxWUtOcithUzR2djA0V2hybTlnUVJQUjBqL0dvVGhjZmFpCjJLMUZuaW5HaEtkMFU2aGV2QjhaK2tDT2Y0UDFxUzlkRVdkRDZ4clhEdm04NlliSlUzVzBwenVLQ0dWU2FiUksKaHMxNUJwbzJoN29WbURFcVBTOWN0dz09Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K"
+              }
+            ],
+            "master_authorized_networks_config": [],
+            "master_version": "1.31.4-gke.1183000",
+            "mesh_certificates": [],
+            "min_master_version": null,
+            "monitoring_config": [
+              {
+                "advanced_datapath_observability_config": [
+                  {
+                    "enable_metrics": false,
+                    "relay_mode": ""
+                  }
+                ],
+                "enable_components": [
+                  "SYSTEM_COMPONENTS",
+                  "DEPLOYMENT",
+                  "STATEFULSET",
+                  "STORAGE",
+                  "HPA",
+                  "POD",
+                  "DAEMONSET",
+                  "CADVISOR",
+                  "KUBELET"
+                ],
+                "managed_prometheus": [
+                  {
+                    "enabled": true
+                  }
+                ]
+              }
+            ],
+            "monitoring_service": "monitoring.googleapis.com/kubernetes",
+            "name": "gke-dauphine",
+            "network": "projects/tpnote-449407/global/networks/default",
+            "network_policy": [
+              {
+                "enabled": false,
+                "provider": "PROVIDER_UNSPECIFIED"
+              }
+            ],
+            "networking_mode": "VPC_NATIVE",
+            "node_config": [
+              {
+                "advanced_machine_features": [],
+                "boot_disk_kms_key": "",
+                "confidential_nodes": [],
+                "disk_size_gb": 100,
+                "disk_type": "pd-balanced",
+                "ephemeral_storage_local_ssd_config": [],
+                "fast_socket": [],
+                "gcfs_config": [],
+                "guest_accelerator": [],
+                "gvnic": [],
+                "host_maintenance_policy": [],
+                "image_type": "COS_CONTAINERD",
+                "kubelet_config": [
+                  {
+                    "cpu_cfs_quota": false,
+                    "cpu_cfs_quota_period": "",
+                    "cpu_manager_policy": "",
+                    "pod_pids_limit": 0
+                  }
+                ],
+                "labels": {},
+                "linux_node_config": [],
+                "local_nvme_ssd_block_config": [],
+                "local_ssd_count": 0,
+                "logging_variant": "DEFAULT",
+                "machine_type": "e2-standard-2",
+                "metadata": {
+                  "disable-legacy-endpoints": "true"
+                },
+                "min_cpu_platform": "",
+                "node_group": "",
+                "oauth_scopes": [
+                  "https://www.googleapis.com/auth/devstorage.read_only",
+                  "https://www.googleapis.com/auth/logging.write",
+                  "https://www.googleapis.com/auth/monitoring",
+                  "https://www.googleapis.com/auth/service.management.readonly",
+                  "https://www.googleapis.com/auth/servicecontrol",
+                  "https://www.googleapis.com/auth/trace.append"
+                ],
+                "preemptible": false,
+                "reservation_affinity": [],
+                "resource_labels": {},
+                "service_account": "default",
+                "shielded_instance_config": [
+                  {
+                    "enable_integrity_monitoring": true,
+                    "enable_secure_boot": false
+                  }
+                ],
+                "sole_tenant_config": [],
+                "spot": false,
+                "tags": [],
+                "taint": [],
+                "workload_metadata_config": []
+              }
+            ],
+            "node_locations": [],
+            "node_pool": [
+              {
+                "autoscaling": [],
+                "initial_node_count": 2,
+                "instance_group_urls": [
+                  "https://www.googleapis.com/compute/v1/projects/tpnote-449407/zones/us-central1-a/instanceGroupManagers/gke-gke-dauphine-default-pool-5611e53b-grp"
+                ],
+                "managed_instance_group_urls": [
+                  "https://www.googleapis.com/compute/v1/projects/tpnote-449407/zones/us-central1-a/instanceGroups/gke-gke-dauphine-default-pool-5611e53b-grp"
+                ],
+                "management": [
+                  {
+                    "auto_repair": true,
+                    "auto_upgrade": true
+                  }
+                ],
+                "max_pods_per_node": 110,
+                "name": "default-pool",
+                "name_prefix": "",
+                "network_config": [
+                  {
+                    "create_pod_range": false,
+                    "enable_private_nodes": false,
+                    "pod_cidr_overprovision_config": [],
+                    "pod_ipv4_cidr_block": "10.48.0.0/14",
+                    "pod_range": "gke-gke-dauphine-pods-dda829b4"
+                  }
+                ],
+                "node_config": [
+                  {
+                    "advanced_machine_features": [],
+                    "boot_disk_kms_key": "",
+                    "confidential_nodes": [],
+                    "disk_size_gb": 100,
+                    "disk_type": "pd-balanced",
+                    "ephemeral_storage_local_ssd_config": [],
+                    "fast_socket": [],
+                    "gcfs_config": [],
+                    "guest_accelerator": [],
+                    "gvnic": [],
+                    "host_maintenance_policy": [],
+                    "image_type": "COS_CONTAINERD",
+                    "kubelet_config": [
+                      {
+                        "cpu_cfs_quota": false,
+                        "cpu_cfs_quota_period": "",
+                        "cpu_manager_policy": "",
+                        "pod_pids_limit": 0
+                      }
+                    ],
+                    "labels": {},
+                    "linux_node_config": [],
+                    "local_nvme_ssd_block_config": [],
+                    "local_ssd_count": 0,
+                    "logging_variant": "DEFAULT",
+                    "machine_type": "e2-standard-2",
+                    "metadata": {
+                      "disable-legacy-endpoints": "true"
+                    },
+                    "min_cpu_platform": "",
+                    "node_group": "",
+                    "oauth_scopes": [
+                      "https://www.googleapis.com/auth/devstorage.read_only",
+                      "https://www.googleapis.com/auth/logging.write",
+                      "https://www.googleapis.com/auth/monitoring",
+                      "https://www.googleapis.com/auth/service.management.readonly",
+                      "https://www.googleapis.com/auth/servicecontrol",
+                      "https://www.googleapis.com/auth/trace.append"
+                    ],
+                    "preemptible": false,
+                    "reservation_affinity": [],
+                    "resource_labels": {},
+                    "service_account": "default",
+                    "shielded_instance_config": [
+                      {
+                        "enable_integrity_monitoring": true,
+                        "enable_secure_boot": false
+                      }
+                    ],
+                    "sole_tenant_config": [],
+                    "spot": false,
+                    "tags": [],
+                    "taint": [],
+                    "workload_metadata_config": []
+                  }
+                ],
+                "node_count": 2,
+                "node_locations": [
+                  "us-central1-a"
+                ],
+                "placement_policy": [],
+                "upgrade_settings": [
+                  {
+                    "blue_green_settings": [],
+                    "max_surge": 1,
+                    "max_unavailable": 0,
+                    "strategy": "SURGE"
+                  }
+                ],
+                "version": "1.31.4-gke.1183000"
+              }
+            ],
+            "node_pool_auto_config": [],
+            "node_pool_defaults": [
+              {
+                "node_config_defaults": [
+                  {
+                    "logging_variant": "DEFAULT"
+                  }
+                ]
+              }
+            ],
+            "node_version": "1.31.4-gke.1183000",
+            "notification_config": [
+              {
+                "pubsub": [
+                  {
+                    "enabled": false,
+                    "filter": [],
+                    "topic": ""
+                  }
+                ]
+              }
+            ],
+            "operation": null,
+            "private_cluster_config": [
+              {
+                "enable_private_endpoint": false,
+                "enable_private_nodes": false,
+                "master_global_access_config": [
+                  {
+                    "enabled": false
+                  }
+                ],
+                "master_ipv4_cidr_block": "",
+                "peering_name": "",
+                "private_endpoint": "10.128.0.2",
+                "private_endpoint_subnetwork": "",
+                "public_endpoint": "34.122.157.86"
+              }
+            ],
+            "private_ipv6_google_access": "",
+            "project": "tpnote-449407",
+            "release_channel": [
+              {
+                "channel": "REGULAR"
+              }
+            ],
+            "remove_default_node_pool": null,
+            "resource_labels": {},
+            "resource_usage_export_config": [],
+            "security_posture_config": [
+              {
+                "mode": "BASIC",
+                "vulnerability_mode": "VULNERABILITY_MODE_UNSPECIFIED"
+              }
+            ],
+            "self_link": "https://container.googleapis.com/v1/projects/tpnote-449407/zones/us-central1-a/clusters/gke-dauphine",
+            "service_external_ips_config": [
+              {
+                "enabled": false
+              }
+            ],
+            "services_ipv4_cidr": "34.118.224.0/20",
+            "subnetwork": "projects/tpnote-449407/regions/us-central1/subnetworks/default",
+            "tpu_ipv4_cidr_block": "",
+            "vertical_pod_autoscaling": [],
+            "workload_identity_config": []
+          },
+          "sensitive_attributes": []
+        }
+      ]
+    },
+    {
+      "mode": "data",
+      "type": "google_iam_policy",
+      "name": "noauth",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "audit_config": null,
+            "binding": [
+              {
+                "condition": [],
+                "members": [
+                  "allUsers"
+                ],
+                "role": "roles/run.invoker"
+              }
+            ],
+            "id": "3450855414",
+            "policy_data": "{\"bindings\":[{\"members\":[\"allUsers\"],\"role\":\"roles/run.invoker\"}]}"
+          },
+          "sensitive_attributes": []
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "google_artifact_registry_repository",
+      "name": "demo-repo",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "create_time": "2025-01-30T08:28:36.733900Z",
+            "description": "Exemple de repo Docker",
+            "docker_config": [],
+            "format": "DOCKER",
+            "id": "projects/tpnote-449407/locations/us-central1/repositories/demo-repository",
+            "kms_key_name": "",
+            "labels": {},
+            "location": "us-central1",
+            "maven_config": [],
+            "mode": "STANDARD_REPOSITORY",
+            "name": "demo-repository",
+            "project": "tpnote-449407",
+            "remote_repository_config": [],
+            "repository_id": "demo-repository",
+            "timeouts": null,
+            "update_time": "2025-01-30T08:28:36.733900Z",
+            "virtual_repository_config": []
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxMjAwMDAwMDAwMDAwLCJkZWxldGUiOjEyMDAwMDAwMDAwMDAsInVwZGF0ZSI6MTIwMDAwMDAwMDAwMH19",
+          "dependencies": [
+            "google_project_service.artifact",
+            "google_project_service.ressource_manager"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "google_cloud_run_service",
+      "name": "default",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "autogenerate_revision_name": false,
+            "id": "locations/us-central1/namespaces/tpnote-449407/services/wordpress-service",
+            "location": "us-central1",
+            "metadata": [
+              {
+                "annotations": {
+                  "run.googleapis.com/ingress": "all",
+                  "run.googleapis.com/ingress-status": "all",
+                  "run.googleapis.com/operation-id": "5f7c1b64-ecb8-4564-b384-7fada6466a55",
+                  "run.googleapis.com/urls": "[\"https://wordpress-service-263945941625.us-central1.run.app\",\"https://wordpress-service-zza2gbqrpa-uc.a.run.app\"]",
+                  "serving.knative.dev/creator": "arvindesenguttuvan@gmail.com",
+                  "serving.knative.dev/lastModifier": "arvindesenguttuvan@gmail.com"
+                },
+                "generation": 1,
+                "labels": {
+                  "cloud.googleapis.com/location": "us-central1"
+                },
+                "namespace": "tpnote-449407",
+                "resource_version": "AAYs6XXd2no",
+                "self_link": "/apis/serving.knative.dev/v1/namespaces/263945941625/services/wordpress-service",
+                "uid": "d4d17020-5f07-48ee-9b6b-5dfe76c716a7"
+              }
+            ],
+            "name": "wordpress-service",
+            "project": "tpnote-449407",
+            "status": [
+              {
+                "conditions": [
+                  {
+                    "message": "",
+                    "reason": "",
+                    "status": "True",
+                    "type": "Ready"
+                  },
+                  {
+                    "message": "",
+                    "reason": "",
+                    "status": "True",
+                    "type": "ConfigurationsReady"
+                  },
+                  {
+                    "message": "",
+                    "reason": "",
+                    "status": "True",
+                    "type": "RoutesReady"
+                  }
+                ],
+                "latest_created_revision_name": "wordpress-service-00001-lbp",
+                "latest_ready_revision_name": "wordpress-service-00001-lbp",
+                "observed_generation": 1,
+                "traffic": [
+                  {
+                    "latest_revision": true,
+                    "percent": 100,
+                    "revision_name": "wordpress-service-00001-lbp",
+                    "tag": "",
+                    "url": ""
+                  }
+                ],
+                "url": "https://wordpress-service-zza2gbqrpa-uc.a.run.app"
+              }
+            ],
+            "template": [
+              {
+                "metadata": [
+                  {
+                    "annotations": {
+                      "autoscaling.knative.dev/maxScale": "100"
+                    },
+                    "generation": 0,
+                    "labels": {
+                      "run.googleapis.com/startupProbeType": "Default"
+                    },
+                    "name": "",
+                    "namespace": "",
+                    "resource_version": "",
+                    "self_link": "",
+                    "uid": ""
+                  }
+                ],
+                "spec": [
+                  {
+                    "container_concurrency": 80,
+                    "containers": [
+                      {
+                        "args": [],
+                        "command": [],
+                        "env": [],
+                        "env_from": [],
+                        "image": "us-central1-docker.pkg.dev/tpnote-449407/website-tools/wordpress-custom",
+                        "liveness_probe": [],
+                        "name": "",
+                        "ports": [
+                          {
+                            "container_port": 80,
+                            "name": "http1",
+                            "protocol": ""
+                          }
+                        ],
+                        "resources": [
+                          {
+                            "limits": {
+                              "cpu": "1000m",
+                              "memory": "512Mi"
+                            },
+                            "requests": {}
+                          }
+                        ],
+                        "startup_probe": [
+                          {
+                            "failure_threshold": 1,
+                            "grpc": [],
+                            "http_get": [],
+                            "initial_delay_seconds": 0,
+                            "period_seconds": 240,
+                            "tcp_socket": [
+                              {
+                                "port": 80
+                              }
+                            ],
+                            "timeout_seconds": 240
+                          }
+                        ],
+                        "volume_mounts": [],
+                        "working_dir": ""
+                      }
+                    ],
+                    "service_account_name": "263945941625-compute@developer.gserviceaccount.com",
+                    "serving_state": "",
+                    "timeout_seconds": 300,
+                    "volumes": []
+                  }
+                ]
+              }
+            ],
+            "timeouts": null,
+            "traffic": [
+              {
+                "latest_revision": true,
+                "percent": 100,
+                "revision_name": "",
+                "tag": "",
+                "url": ""
+              }
+            ]
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxMjAwMDAwMDAwMDAwLCJkZWxldGUiOjEyMDAwMDAwMDAwMDAsInVwZGF0ZSI6MTIwMDAwMDAwMDAwMH0sInNjaGVtYV92ZXJzaW9uIjoiMSJ9"
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "google_cloud_run_service_iam_policy",
+      "name": "noauth",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "etag": "BwYs6Z7Pj5g=",
+            "id": "v1/projects/tpnote-449407/locations/us-central1/services/wordpress-service",
+            "location": "us-central1",
+            "policy_data": "{\"bindings\":[{\"members\":[\"allUsers\"],\"role\":\"roles/run.invoker\"}]}",
+            "project": "tpnote-449407",
+            "service": "v1/projects/tpnote-449407/locations/us-central1/services/wordpress-service"
+          },
+          "sensitive_attributes": [],
+          "private": "bnVsbA==",
+          "dependencies": [
+            "data.google_iam_policy.noauth"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "google_project_service",
+      "name": "artifact",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "disable_dependent_services": null,
+            "disable_on_destroy": true,
+            "id": "tpnote-449407/artifactregistry.googleapis.com",
+            "project": "tpnote-449407",
+            "service": "artifactregistry.googleapis.com",
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxMjAwMDAwMDAwMDAwLCJkZWxldGUiOjEyMDAwMDAwMDAwMDAsInJlYWQiOjYwMDAwMDAwMDAwMCwidXBkYXRlIjoxMjAwMDAwMDAwMDAwfX0=",
+          "dependencies": [
+            "google_project_service.ressource_manager"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "google_project_service",
+      "name": "ressource_manager",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "disable_dependent_services": null,
+            "disable_on_destroy": true,
+            "id": "tpnote-449407/cloudresourcemanager.googleapis.com",
+            "project": "tpnote-449407",
+            "service": "cloudresourcemanager.googleapis.com",
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxMjAwMDAwMDAwMDAwLCJkZWxldGUiOjEyMDAwMDAwMDAwMDAsInJlYWQiOjYwMDAwMDAwMDAwMCwidXBkYXRlIjoxMjAwMDAwMDAwMDAwfX0="
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "google_project_service",
+      "name": "ressource_usage",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": [
+        {
+          "index_key": "serviceusage.googleapis.com",
+          "schema_version": 0,
+          "attributes": {
+            "disable_dependent_services": null,
+            "disable_on_destroy": true,
+            "id": "tpnote-449407/serviceusage.googleapis.com",
+            "project": "tpnote-449407",
+            "service": "serviceusage.googleapis.com",
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxMjAwMDAwMDAwMDAwLCJkZWxldGUiOjEyMDAwMDAwMDAwMDAsInJlYWQiOjYwMDAwMDAwMDAwMCwidXBkYXRlIjoxMjAwMDAwMDAwMDAwfX0=",
+          "dependencies": [
+            "google_project_service.ressource_manager"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "google_sql_database",
+      "name": "database",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "charset": "utf8mb4",
+            "collation": "utf8mb4_0900_ai_ci",
+            "deletion_policy": "DELETE",
+            "id": "projects/tpnote-449407/instances/main-instance/databases/wordpress",
+            "instance": "main-instance",
+            "name": "wordpress",
+            "project": "tpnote-449407",
+            "self_link": "https://sqladmin.googleapis.com/sql/v1beta4/projects/tpnote-449407/instances/main-instance/databases/wordpress",
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxMjAwMDAwMDAwMDAwLCJkZWxldGUiOjEyMDAwMDAwMDAwMDAsInVwZGF0ZSI6MTIwMDAwMDAwMDAwMH19"
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "google_sql_database_instance",
+      "name": "instance",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "available_maintenance_versions": [],
+            "clone": [],
+            "connection_name": "tpnote-449407:us-central1:my-database-instance",
+            "database_version": "MYSQL_8_0",
+            "deletion_protection": true,
+            "dns_name": "",
+            "encryption_key_name": null,
+            "first_ip_address": "34.56.81.52",
+            "id": "my-database-instance",
+            "instance_type": "CLOUD_SQL_INSTANCE",
+            "ip_address": [
+              {
+                "ip_address": "34.56.81.52",
+                "time_to_retire": "",
+                "type": "PRIMARY"
+              }
+            ],
+            "maintenance_version": "MYSQL_8_0_37.R20241208.01_00",
+            "master_instance_name": "",
+            "name": "my-database-instance",
+            "private_ip_address": "",
+            "project": "tpnote-449407",
+            "psc_service_attachment_link": "",
+            "public_ip_address": "34.56.81.52",
+            "region": "us-central1",
+            "replica_configuration": [],
+            "restore_backup_context": [],
+            "root_password": null,
+            "self_link": "https://sqladmin.googleapis.com/sql/v1beta4/projects/tpnote-449407/instances/my-database-instance",
+            "server_ca_cert": [
+              {
+                "cert": "-----BEGIN CERTIFICATE-----\nMIIDfzCCAmegAwIBAgIBADANBgkqhkiG9w0BAQsFADB3MS0wKwYDVQQuEyRiOTJh\nNTJmNC1iOTZjLTRiZmMtOTZiZi1hMDNhZDRlYWQ0NzAxIzAhBgNVBAMTGkdvb2ds\nZSBDbG91ZCBTUUwgU2VydmVyIENBMRQwEgYDVQQKEwtHb29nbGUsIEluYzELMAkG\nA1UEBhMCVVMwHhcNMjUwMTMwMDgyODM0WhcNMzUwMTI4MDgyOTM0WjB3MS0wKwYD\nVQQuEyRiOTJhNTJmNC1iOTZjLTRiZmMtOTZiZi1hMDNhZDRlYWQ0NzAxIzAhBgNV\nBAMTGkdvb2dsZSBDbG91ZCBTUUwgU2VydmVyIENBMRQwEgYDVQQKEwtHb29nbGUs\nIEluYzELMAkGA1UEBhMCVVMwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIB\nAQCztOsG/wgc16XK9edktLzHu/zWxNoJ9DL22zDa9F/pje6DLArnX/Y2wOVou2j8\n9x/VUgqYPr19/X/nAsVIJCjDjWI8d2GcDR6rV8liGrCdpVs0EYapzbVASB3lz997\nc34N9SW3O8pSfvpbqRejwB1puruYAVjX9sIPdWpMThonwWG2PLRNv6kK68znWqgS\nrzVJO+gycRq93Y42wZbvpSyTnF3Hp3YUokB7JLxtOfJuTPMJ2GLcWqZ5dGNNauyY\n9btUWBx8TmHKdCGtQoZ83KTzXaBcSvkxPOCnAds98QZqum6Y6IQJ8q245WuaX5pU\nCjTpaa8/C9VlBlm/2MpM0BrdAgMBAAGjFjAUMBIGA1UdEwEB/wQIMAYBAf8CAQAw\nDQYJKoZIhvcNAQELBQADggEBAFAvNsDCdhRZm7Mln55BpOewGrCkxUv5UuEr89hM\n58bi+/jB5681gzUGDIQvi3mKo4A6Kbi4W5640t+SXbV/kqq5yDlprmJOvh7TzRSi\nf9lfquU1ou8/8FAcROVr09mp1bgxZSy/VeBeY8Wfe2fcZa9PFY1F0ytjeAwFdulE\ni+DvtL3vuAXHhLgJyW745PLhiXf4nUP/cqpry8p+NngdPGyE8yK4Gtv7rcEd24x1\nDlOYfJHN6/xWeHtM71wY4R2Wxktp2qf1jDMyX6z3ffmT/asxh9/U/LpXROBqd/Ag\nI9O4DpSCdNVDOHmdtdz49yxFApzR4R507jXt1vzfEBDWxpk=\n-----END CERTIFICATE-----",
+                "common_name": "C=US,O=Google\\, Inc,CN=Google Cloud SQL Server CA,dnQualifier=b92a52f4-b96c-4bfc-96bf-a03ad4ead470",
+                "create_time": "2025-01-30T08:28:34.512Z",
+                "expiration_time": "2035-01-28T08:29:34.512Z",
+                "sha1_fingerprint": "5246c070613679eb2af9f82a634fd1e6fa69d6ea"
+              }
+            ],
+            "service_account_email_address": "p263945941625-bomtqr@gcp-sa-cloud-sql.iam.gserviceaccount.com",
+            "settings": [
+              {
+                "activation_policy": "ALWAYS",
+                "active_directory_config": [],
+                "advanced_machine_features": [],
+                "availability_type": "ZONAL",
+                "backup_configuration": [
+                  {
+                    "backup_retention_settings": [
+                      {
+                        "retained_backups": 7,
+                        "retention_unit": "COUNT"
+                      }
+                    ],
+                    "binary_log_enabled": false,
+                    "enabled": false,
+                    "location": "",
+                    "point_in_time_recovery_enabled": false,
+                    "start_time": "14:00",
+                    "transaction_log_retention_days": 7
+                  }
+                ],
+                "collation": "",
+                "connector_enforcement": "NOT_REQUIRED",
+                "data_cache_config": [],
+                "database_flags": [],
+                "deletion_protection_enabled": false,
+                "deny_maintenance_period": [],
+                "disk_autoresize": true,
+                "disk_autoresize_limit": 0,
+                "disk_size": 10,
+                "disk_type": "PD_SSD",
+                "edition": "",
+                "insights_config": [],
+                "ip_configuration": [
+                  {
+                    "allocated_ip_range": "",
+                    "authorized_networks": [],
+                    "enable_private_path_for_google_cloud_services": false,
+                    "ipv4_enabled": true,
+                    "private_network": "",
+                    "psc_config": [],
+                    "require_ssl": false
+                  }
+                ],
+                "location_preference": [
+                  {
+                    "follow_gae_application": "",
+                    "secondary_zone": "",
+                    "zone": "us-central1-c"
+                  }
+                ],
+                "maintenance_window": [],
+                "password_validation_policy": [],
+                "pricing_plan": "PER_USE",
+                "sql_server_audit_config": [],
+                "tier": "db-f1-micro",
+                "time_zone": "",
+                "user_labels": {},
+                "version": 2
+              }
+            ],
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoyNDAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInVwZGF0ZSI6MTgwMDAwMDAwMDAwMH19"
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "google_sql_user",
+      "name": "wordpress",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "deletion_policy": null,
+            "host": "",
+            "id": "wordpress//main-instance",
+            "instance": "main-instance",
+            "name": "wordpress",
+            "password": "ilovedevops",
+            "password_policy": [],
+            "project": "tpnote-449407",
+            "sql_server_user_details": [],
+            "timeouts": null,
+            "type": ""
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo2MDAwMDAwMDAwMDAsImRlbGV0ZSI6NjAwMDAwMDAwMDAwLCJ1cGRhdGUiOjYwMDAwMDAwMDAwMH0sInNjaGVtYV92ZXJzaW9uIjoiMSJ9"
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "google_storage_bucket",
+      "name": "default",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "autoclass": [],
+            "cors": [],
+            "custom_placement_config": [],
+            "default_event_based_hold": false,
+            "encryption": [],
+            "force_destroy": true,
+            "id": "terraform-bucket-sitn-bis",
+            "labels": {},
+            "lifecycle_rule": [],
+            "location": "US",
+            "logging": [],
+            "name": "terraform-bucket-sitn-bis",
+            "project": "tpnote-449407",
+            "public_access_prevention": "inherited",
+            "requester_pays": false,
+            "retention_policy": [],
+            "self_link": "https://www.googleapis.com/storage/v1/b/terraform-bucket-sitn-bis",
+            "storage_class": "STANDARD",
+            "timeouts": null,
+            "uniform_bucket_level_access": false,
+            "url": "gs://terraform-bucket-sitn-bis",
+            "versioning": [],
+            "website": []
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo2MDAwMDAwMDAwMDAsInJlYWQiOjI0MDAwMDAwMDAwMCwidXBkYXRlIjoyNDAwMDAwMDAwMDB9fQ=="
+        }
+      ]
+    }
+  ],
+  "check_results": null
+}
