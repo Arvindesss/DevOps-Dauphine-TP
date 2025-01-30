@@ -50,3 +50,36 @@ resource "google_storage_bucket" "default" {
      location      = "US"
      force_destroy = true
 }
+
+data "google_iam_policy" "noauth" {
+   binding {
+      role = "roles/run.invoker"
+      members = [
+         "allUsers",
+      ]
+   }
+}
+
+resource "google_cloud_run_service_iam_policy" "noauth" {
+   location    = "us-central1" # remplacer par le nom de votre ressource
+   project     = "tpnote-449407" # remplacer par le nom de votre ressource
+   service     = "wordpress-service" # remplacer par le nom de votre ressourcecs
+   policy_data = data.google_iam_policy.noauth.policy_data
+}
+
+resource "google_cloud_run_service" "default" {
+  name     = "wordpress-service" 
+  location = "us-central1" 
+
+  template {
+    spec {
+      containers {
+        image = "us-central1-docker.pkg.dev/tpnote-449407/website-tools/wordpress-custom"
+        ports {
+          container_port = 80
+        }
+      }
+    }
+  }
+  
+}
