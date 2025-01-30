@@ -7,7 +7,7 @@
 
 -> 43% des sites internet ont été réalisés avec WordPress et 63% des blogs 🤯
 
-Vous êtes la nouvelle / le nouveau DevOps Engineer d'une startup 👩‍💻👨‍💻
+Vous êtes le nouveau DevOps Engineer d'une startup 👩‍💻👨‍💻
 Vous avez pour objectif de configurer l'infrastructure sur GCP qui hébergera le site de l'entreprise 🌏.
 
 Dans ce TP, l'objectif est de **déployer l'application Wordpress** sur Cloud Run puis Kubernetes en utilisant les outils et pratiques vus ensemble : git, Docker, Artifact Registry, Cloud Build, Infrastructure as Code (Terraform) et GKE.
